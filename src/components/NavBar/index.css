@@ -1,0 +1,44 @@
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0  32px;
+    margin: 16px  0;
+}
+.logo_container img{
+    width: 40px;
+    height: 40px;
+}
+.logo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.serv_list{
+
+    display: flex;
+    justify-content: space-around;
+    gap: 2.5rem;
+}
+.serv_list a {
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.hire_me_container {
+    border:  1px solid ;
+    padding: 4px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18181f;
+    border-radius: 25px;    
+
+}
+.hire_me_container a{
+    color: #fff;
+    font-weight: 500;
+}
