@@ -1,0 +1,13 @@
+.testimonials_container {
+    margin: 5rem 0;
+}
+
+.swiper_slider {
+    width: 200px;
+    height: 190px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

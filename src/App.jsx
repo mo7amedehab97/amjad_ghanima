@@ -5,6 +5,7 @@ import Expereince from "./components/Experience/Expereince";
 import LatestWork from "./components/LatestWork/LatestWork";
 import NavBar from "./components/NavBar/NavBar";
 import ShowCases from "./components/ShowCases/ShowCases";
+import Testimonials from "./components/Testimonials/Testimonials";
 import Title from "./components/Title/Title";
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       <Expereince />
       <Title title=" أخر الأعمال" />
       <LatestWork />
+      <Title title=" أراء العملاء" />
+      <Testimonials />
     </>
   );
 }
