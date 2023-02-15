@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap");
+
 a {
   color: #000;
   text-decoration: none;
 }
+
 a:hover {
 
-cursor: pointer;
+  cursor: pointer;
 }
 
 
@@ -16,24 +18,37 @@ cursor: pointer;
   box-sizing: border-box;
   direction: rtl;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 
 }
+
 body {
   padding: 0 120px;
   scroll-behavior: smooth;
 
 }
+
 ::-webkit-scrollbar {
   width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: red;
+  background: #8a8a8a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background:green;
+  background: #000;
   border-radius: 15px;
+}
+
+.copyrights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  width: calc(100% + 240px);
+  margin-right: -120px;
+  padding: 0 0 1rem 0;
 }
