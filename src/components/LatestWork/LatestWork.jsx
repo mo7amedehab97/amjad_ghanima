@@ -9,16 +9,16 @@ const LatestWork = () => {
   return (
     <section className="latest_work_contaienr">
       <div className="latest_work_col">
-        <img src={bg1} alt="" />
-        <img src={bg3} alt="" />
-      </div>{" "}
+        <img src={bg1} alt="" loading="lazy" />
+        <img src={bg3} alt="" loading="lazy" />
+      </div>
       <div className="latest_work_col">
-        <img src={bg4} alt="" />
-        <img src={bg2} alt="" />
-      </div>{" "}
+        <img src={bg4} alt="" loading="lazy" />
+        <img src={bg2} alt="" loading="lazy" />
+      </div>
       <div className="latest_work_col">
-        <img src={bg6} alt="" />
-        <img src={bg5} alt="" />
+        <img src={bg6} alt="" loading="lazy" />
+        <img src={bg5} alt="" loading="lazy" />
       </div>
     </section>
   );
