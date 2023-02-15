@@ -1,7 +1,7 @@
 .show_case_container {
     display: flex;
     justify-content: space-between;
-    margin: 7rem 0 5rem;
+    margin: 7rem 0 ;
 }
 
 .show_case_comp {
