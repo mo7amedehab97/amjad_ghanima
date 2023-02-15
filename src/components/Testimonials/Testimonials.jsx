@@ -16,6 +16,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
+import SingleTestiComp from "./SingleTestiComp";
 
 const Testimonials = () => {
   return (
@@ -30,10 +31,18 @@ const Testimonials = () => {
         pagination={{ clickable: true }}
         className="swiper_container"
       >
-        <SwiperSlide className="swiper_slider">Slide 1</SwiperSlide>{" "}
-        <SwiperSlide className="swiper_slider">Slide 1</SwiperSlide>{" "}
-        <SwiperSlide className="swiper_slider">Slide 1</SwiperSlide>{" "}
-        <SwiperSlide className="swiper_slider">Slide 1</SwiperSlide>
+        <SwiperSlide className="swiper_slider">
+          <SingleTestiComp />
+        </SwiperSlide>
+        <SwiperSlide className="swiper_slider">
+          <SingleTestiComp />
+        </SwiperSlide>{" "}
+        <SwiperSlide className="swiper_slider">
+          <SingleTestiComp />
+        </SwiperSlide>{" "}
+        <SwiperSlide className="swiper_slider">
+          <SingleTestiComp />
+        </SwiperSlide>
       </Swiper>
     </section>
   );
