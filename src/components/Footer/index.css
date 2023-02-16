@@ -7,3 +7,9 @@ footer {
     padding: 2.5rem 120px;
     align-items: center;
 }
+@media (max-width: 900px) {
+    footer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

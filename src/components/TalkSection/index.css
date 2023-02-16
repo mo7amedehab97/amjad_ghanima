@@ -72,3 +72,30 @@
     font-size: 18px;
     font-weight: 600;
 }
+
+@media (max-width: 660px) {
+
+
+    .talk_holder {
+        margin-right: 60px;
+
+    }
+
+    .talk_container img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+
+
+    }
+
+    .talk_contact img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 0;
+    }
+
+
+}
