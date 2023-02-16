@@ -1,7 +1,7 @@
 .show_case_container {
     display: flex;
     justify-content: space-between;
-    margin: 7rem 0 ;
+    margin: 7rem 0;
 }
 
 .show_case_comp {
@@ -10,13 +10,15 @@
     justify-content: center;
     align-items: center;
     gap: .5rem;
+    padding: 1rem;
 }
 
 .show_case_comp img {
-    width: 450px;
+    width: calc(100%);
+    max-width: 450px;
     height: 450px;
     object-fit: cover;
-    border-radius: 0 0 25px 0 ;
+    border-radius: 0 0 25px 0;
 }
 
 .show_case_comp p {
@@ -24,9 +26,21 @@
     font-size: 18px;
     font-weight: 300;
 }
+
 .show_case_comp h2 {
     text-align: center;
     font-size: 22px;
     font-weight: 600;
 
+}
+
+@media (max-width:1250px) {
+    .show_case_container {
+        flex-direction: column;
+    }
+
+    .show_case_comp {
+        padding: 2rem 0;
+        border-bottom: 2px solid #b3b3b3;
+    }
 }
