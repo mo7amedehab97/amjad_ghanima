@@ -52,3 +52,12 @@ body {
   margin-right: -120px;
   padding: 0 0 1rem 0;
 }
+
+@media (max-width: 1400px) {
+
+  body {
+    padding: 0 50px;
+  
+  }
+  
+}

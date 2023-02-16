@@ -32,6 +32,7 @@
   align-items: center;
   flex-direction: column;
 }
+
 .banner_about p {
   text-align: center;
 }
@@ -58,8 +59,10 @@
 .col_details3 h1 {
   text-align: center;
 }
+
 .col_details3 h1 {
   max-width: 40%;
+
 }
 
 .col_details3 span {
@@ -79,22 +82,51 @@
 .col_details1 {
   flex: 1;
 }
+
 .banner_numbers {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
+
 .banner_numbers div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .banner_numbers div h1 {
   font-size: 50px;
   font-weight: 500;
 }
+
 .banner_numbers div p {
   font-size: 18px;
   font-weight: 300;
+}
+
+@media (max-width:1250px) {
+
+  .col_details3 h1 {
+    max-width: 70%;
+
+  }
+}
+
+@media (max-width:1000px) {
+  .banner_container {
+    flex-direction: column;
+  }
+
+  .col_details3 h1 {
+    font-size: 22px;
+    max-width: 100%;
+
+  }
+
+  .col_details3 span {
+    width: 100%;
+  }
+
 }
