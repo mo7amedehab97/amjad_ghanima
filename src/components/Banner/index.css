@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 1rem 0;
+  padding: 6rem 0;
+  margin-top: 5rem;
 }
 
 .banner_social img {

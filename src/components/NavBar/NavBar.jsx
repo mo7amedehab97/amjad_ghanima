@@ -1,22 +1,40 @@
+import React, { useState } from "react";
 import "./index.css";
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/مفرغ للموقع-04.png";
+import burgerImg from "../../assets/burger.svg";
+import { useNavigate } from "react-router-dom";
 const NavBar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const navigate = useNavigate();
+
+  const toggleMenu = () => {
+  setShowMenu(!showMenu);
+  }
+
   return (
     <nav className="nav_container">
       <div className="logo_container">
         <img src={Logo} alt="شعار موقع امجد غنيمة" />
-        <h1>
-          <span> أمجد </span>
-          غنيمة
-        </h1>
+       
       </div>
       <div className="serv_list">
-        <a href="#home">الرئيسية</a>
-        <a href="#services">الخدمات</a>
-        <a href="#contact">تواصل معنا</a>
+        <a onClick={() => navigate("/")}>الرئيسية</a>
+        <a onClick={() => navigate("/services")}>ماذا أقدم لك</a>
+        <a onClick={() => navigate("/about")}>تواصل معنا</a>
       </div>
       <div className="hire_me_container">
         <a href="#">وظفني</a>
+      </div>
+      <div className="burger_menu">
+    <div className="burger_img" onClick={toggleMenu}>
+      <img src={burgerImg} alt="burger menu" />
+    </div>
+    <div className={`menu ${showMenu ? "show" : "hide"}`}>
+    <a onClick={() => navigate("/")}>الرئيسية</a>
+        <a onClick={() => navigate("/services")}>ماذا أقدم لك</a>
+        <a onClick={() => navigate("/about")}>تواصل معنا</a>
+      <a href="#">وظفني</a>
+      </div>
       </div>
     </nav>
   );

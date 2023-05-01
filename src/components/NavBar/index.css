@@ -1,44 +1,147 @@
-.nav_container{
+.nav_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ddd;
-    padding: 16px 0  32px;
-    margin: 16px  0;
+    padding: 32px 120px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    margin-bottom: 64px;
+    
+
 }
-.logo_container img{
-    width: 40px;
-    height: 40px;
+
+.burger_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.logo_container{
+
+.burger_img img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.logo_container img {
+    width: 120px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.logo_container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
 }
 
-.serv_list{
+.serv_list {
 
     display: flex;
     justify-content: space-around;
     gap: 2.5rem;
 }
+
 .serv_list a {
     font-size: 20px;
     font-weight: 400;
+    transition: all ease-in-out 0.8s;
+}
+
+.serv_list a:hover {
+    color: #ffc716;
+    transform: scale(1.2);
 
 }
+
 .hire_me_container {
-    border:  1px solid ;
+    border: 1px solid #0082af;
     padding: 4px 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #18181f;
-    border-radius: 25px;    
+    background-color: #0082af;
+    border-radius: 25px;
 
 }
-.hire_me_container a{
+
+.hire_me_container a {
     color: #fff;
     font-weight: 500;
+}
+
+.burger_menu {
+    position: relative;
+    cursor: pointer;
+    transition: all ease-in-out 0.8s;
+    display: none;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    border: 1px solid #ddd;
+    padding: 16px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all ease-in-out 0.8s;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.show a {
+    font-size: 20px;
+    font-weight: 400;
+    transition: all ease-in-out 0.8s;
+    cursor: pointer;
+}
+
+.show a:hover {
+    color: #ffc716;
+    transform: scale(1.2);
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* .nav_container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .logo_container {
+        flex-direction: column;
+    }
+    .serv_list {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .hire_me_container {
+        margin-top: 16px;
+    } */
+    .serv_list,
+    .hire_me_container {
+        display: none;
+    }
+
+    .burger_menu {
+        display: block;
+    }
 }

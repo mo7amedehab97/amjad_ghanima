@@ -7,23 +7,7 @@ import Amjad from "../../assets/personalImg.jpg";
 const Banner = () => {
   return (
     <section className="banner_container">
-      <article className="col_details1">
-        <div className="banner_about">
-          <div>
-            <img src={Star} alt="ايقونةنجمة امحد غنيمة للتسويق الرقمي" />
-          </div>
-          <p>
-            أمجد غنيمة مسوق رقمي بخبرة اكثر من 3 سنوات في مجال التسويق الرقمي
-            اعلانات جوجل سناب شات فيسبوك
-          </p>
-        </div>
-
-        <div className="banner_social">
-          <img src={Twitter} alt="ايقونة تويتر امجد غنيمة " />{" "}
-          <img src={Facebook} alt="ايقونة فيسبوك امجد غنيمة " />{" "}
-          <img src={Instagram} alt="ايقونة انستقرام امجد غنيمة " />
-        </div>
-      </article>
+     
       <div className="col_details2">
         <img src={Amjad} alt="صورة  امجد غنيمة " />
       </div>

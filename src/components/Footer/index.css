@@ -1,14 +1,33 @@
 footer {
+    margin-top: 8rem;
     background-color: #ddd;
-    width: calc(100% + 240px);
-    margin-right: -120px;
     display: flex;
     justify-content: space-between;
     padding: 2.5rem 120px;
     align-items: center;
 }
+
+.serv_list_footer {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 2.5rem;
+}
+
+.serv_list_footer a {
+    font-size: 20px;
+    font-weight: 400;
+    transition: all ease-in-out 0.8s;
+}
+
+.serv_list_footer a:hover {
+    color: #ffc716;
+    transform: scale(1.2);
+
+}
+
 @media (max-width: 900px) {
-    footer{
+    footer {
         flex-direction: column;
         gap: 2rem;
     }
