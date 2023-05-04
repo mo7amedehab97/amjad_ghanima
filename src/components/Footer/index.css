@@ -1,29 +1,44 @@
 footer {
-    margin-top: 8rem;
-    background-color: #ddd;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     padding: 2.5rem 120px;
     align-items: center;
 }
 
-.serv_list_footer {
 
+.banner_social img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.banner_social {
     display: flex;
-    justify-content: space-around;
-    gap: 2.5rem;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
 }
 
-.serv_list_footer a {
-    font-size: 20px;
-    font-weight: 400;
-    transition: all ease-in-out 0.8s;
+.banner_social img {
+    transition: all 1s ease-in-out;
+
 }
 
-.serv_list_footer a:hover {
-    color: #ffc716;
-    transform: scale(1.2);
+.banner_social img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+    border: 1px solid #0082af;
 
+
+}
+
+.copyrights {
+    white-space: nowrap;
 }
 
 @media (max-width: 900px) {

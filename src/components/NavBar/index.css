@@ -11,7 +11,7 @@
     z-index: 999;
     background-color: #fff;
     margin-bottom: 64px;
-    
+
 
 }
 
@@ -61,7 +61,7 @@
 
 .hire_me_container {
     border: 1px solid #0082af;
-    padding: 4px 32px;
+    padding: 12px 32px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,22 +120,17 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
+    .nav_container {
+        padding: 32px 50px;
+    }
+}
 
-    /* .nav_container {
-        flex-direction: column;
-        gap: 16px;
+@media screen and (max-width: 768px) {
+    .nav_container {
+        padding: 32px 30px;
     }
-    .logo_container {
-        flex-direction: column;
-    }
-    .serv_list {
-        flex-direction: column;
-        gap: 16px;
-    }
-    .hire_me_container {
-        margin-top: 16px;
-    } */
+
     .serv_list,
     .hire_me_container {
         display: none;
@@ -144,4 +139,17 @@
     .burger_menu {
         display: block;
     }
+
+.burger_img img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.logo_container img {
+    width: 90px;
+    height: 40px;
+    object-fit: cover;
+}
+
 }

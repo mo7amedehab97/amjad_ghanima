@@ -6,9 +6,7 @@ const ServicesPage = () => {
     <NavBar />
  
     <Footer />
-    <div className="copyrights">
-      <p>&#169; أمجد غنيمة</p>
-    </div>
+   
   </> 
   )
 }

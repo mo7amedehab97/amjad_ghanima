@@ -19,11 +19,12 @@ const NavBar = () => {
       </div>
       <div className="serv_list">
         <a onClick={() => navigate("/")}>الرئيسية</a>
-        <a onClick={() => navigate("/services")}>ماذا أقدم لك</a>
-        <a onClick={() => navigate("/about")}>تواصل معنا</a>
+        <a onClick={() => navigate("/services")}> خدمات التسويق </a>
+        <a onClick={() => navigate("/about")}> نماذج لك </a>
+        
       </div>
       <div className="hire_me_container">
-        <a href="#">وظفني</a>
+        <a href="#">تواصل معي</a>
       </div>
       <div className="burger_menu">
     <div className="burger_img" onClick={toggleMenu}>
@@ -31,9 +32,9 @@ const NavBar = () => {
     </div>
     <div className={`menu ${showMenu ? "show" : "hide"}`}>
     <a onClick={() => navigate("/")}>الرئيسية</a>
-        <a onClick={() => navigate("/services")}>ماذا أقدم لك</a>
-        <a onClick={() => navigate("/about")}>تواصل معنا</a>
-      <a href="#">وظفني</a>
+        <a onClick={() => navigate("/services")}> خدمات التسويق </a>
+        <a onClick={() => navigate("/about")}> نماذج لك </a>
+      <a href="#">تواصل معي</a>
       </div>
       </div>
     </nav>
