@@ -6,7 +6,12 @@ const SecondBanner = () => {
       <span className="spicial"></span>
         <div className="secoend_banner1">
         <div className="circle_header">
-          <h1>تواصل معي لناخذ الاعمال الخاصة بك الي المرحلة المقبل </h1>
+          <h1>
+          نضيء لعملائك طريق الوصول اليك
+
+
+
+          </h1>
           <span></span>
         </div>
         <div className="talk_contact">

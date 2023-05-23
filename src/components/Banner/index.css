@@ -35,6 +35,14 @@
   text-align: center;
   font-size: 18px;
   font-weight: 500;
+
+}
+
+.col_details2 h3 span {
+  color: #0083af;
+  padding: 0 .5rem;
+  font-weight: bold;
+
 }
 
 .col_details2 h1 {
