@@ -1,0 +1,237 @@
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 120px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    margin-bottom: 64px;
+
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.burger_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger_img img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.logo_container img {
+    width: 120px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.logo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.serv_list {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 2.5rem;
+}
+
+.serv_list a {
+    font-size: 20px;
+    font-weight: 400;
+    transition: all ease-in-out 0.8s;
+}
+
+.serv_list a:hover {
+    color: #ffc716;
+    transform: scale(1.2);
+
+}
+
+.hire_me_container {
+    border: 1px solid #0082af;
+    padding: 12px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0082af;
+    border-radius: 25px;
+
+}
+
+.hire_me_container a {
+    color: #fff;
+    font-weight: 500;
+}
+
+.burger_menu {
+    position: relative;
+    cursor: pointer;
+    transition: all ease-in-out 0.8s;
+    display: none;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    border: 1px solid #ddd;
+    padding: 16px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all ease-in-out 0.8s;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.show a {
+    font-size: 20px;
+    font-weight: 400;
+    transition: all ease-in-out 0.8s;
+    cursor: pointer;
+}
+
+.show a:hover {
+    color: #ffc716;
+    transform: scale(1.2);
+
+
+}
+
+.form_send {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    width: 30%;
+    border-radius: 9px;
+}
+
+.form_row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form_row label {
+    padding: .1rem 1rem;
+    font-weight: 800;
+    color: #707070;
+    width: 70px;
+}
+
+.form_row input {
+    margin-right: 1.6rem;
+    padding: .2rem .5rem;
+    border: .5px solid #ccc;
+    border-radius: 9px;
+    font-weight: 600;
+    color: #707070;
+    width: 100%;
+
+}
+
+.form_row textarea:focus,
+.form_row input:focus {
+    outline: .5px solid #ffc716;
+
+}
+
+.form_row textarea {
+    margin-right: .1rem;
+    border-radius: 9px;
+    width: 100%;
+    padding: .2rem .5rem;
+    border: .5px solid #ccc;
+    border-radius: 9px;
+    font-weight: 600;
+    color: #707070;
+
+
+}
+
+.form_send_container {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form_send_container input {
+    background-color: #0082af;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    padding: .5rem 3rem;
+    border-radius: 9px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .nav_container {
+        padding: 32px 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav_container {
+        padding: 32px 30px;
+    }
+
+    .serv_list,
+    .hire_me_container {
+        display: none;
+    }
+
+    .burger_menu {
+        display: block;
+    }
+
+    .burger_img img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    .logo_container img {
+        width: 90px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+}
