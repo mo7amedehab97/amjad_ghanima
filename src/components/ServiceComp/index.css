@@ -59,3 +59,32 @@
     height: 400px;
     object-fit: cover;
 }
+
+@media screen and (max-width: 1450px) {
+
+    .service_comp_container,
+    .service_comp_container_1 {
+        flex-direction: column;
+        margin: 0;
+        border-bottom: none;
+
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .left,
+    .right {
+        width: 400px;
+        margin: 0;
+        padding: 0;
+        
+    }
+}
