@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: #edb820; */
     padding: 2rem 120px;
     margin: 0rem 120px 0;
     border-bottom: 1px solid #ccc;
@@ -13,7 +12,6 @@
     align-items: center;
     justify-content: space-between;
     direction: ltr;
-    /* background-color: #31ed20; */
     padding: 2rem 120px;
 }
 
@@ -58,4 +56,19 @@
     width: 700px;
     height: 400px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1450px) {
+
+    .service_comp_container,
+    .service_comp_container_1 {
+        flex-direction: column;
+        margin: 0;
+        border-bottom: none;
+
+    }
+    .left ,.right{
+        width: 100%;
+        margin: 0;
+    }
 }
