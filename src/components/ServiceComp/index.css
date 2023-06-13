@@ -97,7 +97,7 @@
     white-space: nowrap;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1250px) {
 
     .service_comp_container,
     .service_comp_container_1 {
