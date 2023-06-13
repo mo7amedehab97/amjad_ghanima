@@ -76,12 +76,17 @@ button {
     align-items: center;
     background-color: #0082af;
     border-radius: 25px;
-
+    gap: .5rem;
 }
 
 .hire_me_container a {
     color: #fff;
-    font-weight: 500;
+    font-weight: 800;
+}
+
+.hire_me_container img {
+    width: 25px;
+    height: 25px;
 }
 
 .burger_menu {

@@ -63,6 +63,8 @@
   gap: 16px;
   padding: 6rem 0;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
 }
@@ -90,9 +92,7 @@
   gap: 1.5rem;
   background-color: #5acdf38c;
   padding: 2rem;
-  margin-left: 120px !important;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-radius: 25px;
   width: 50%;
   z-index: 99;
 
@@ -110,6 +110,33 @@
   animation: moha1 5s infinite;
   transition: all .8s ease-out;
 }
+
+.secoend_banner3 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: #5acdf38c;
+  border-radius: 50%;
+  top: -35px;
+  right: -35px;
+  z-index: 1;
+  animation: moha1 5s infinite;
+  transition: all .8s ease-out;
+}
+
+.spicial_1 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: #5acdf3;
+  border-radius: 50%;
+  bottom: -35px;
+  right: -35px;
+  z-index: 2;
+  animation: moha 5s infinite;
+  transition: all 1s ease-in-out;
+}
+
 
 /* circel */
 
@@ -144,8 +171,9 @@
   gap: 1rem;
   padding: .5rem 1rem;
   border-radius: 25px;
-  background-color: #fff;
+  background-color: transparent;
   cursor: pointer;
+  font-weight: normal;
 
 }
 
@@ -159,6 +187,10 @@
 .talk_contact a {
   font-size: 18px;
   font-weight: 600;
+}
+
+.talk_contact button {
+  font-weight: 900;
 }
 
 @media (max-width:1250px) {
@@ -187,6 +219,48 @@
 
 
 
+}
+
+.reserve_a_sission {
+  background-color: #0083af;
+  padding: .5rem 1rem;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: all 1s ease-in-out;
+
+}
+
+.reserve_a_sission button {
+  color: #fff;
+  font-weight: 700;
+  transition: all 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
+}
+
+.reserve_a_sission a {
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
+
+
+}
+
+.reserve_a_sission:hover {
+  transform: scale(1.1);
+}
+
+.reserve_a_sission button:hover {
+  color: gold;
 }
 
 @media (max-width:1000px) {

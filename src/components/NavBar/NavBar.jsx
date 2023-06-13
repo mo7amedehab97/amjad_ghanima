@@ -1,11 +1,11 @@
-import React, { useState,useRef } from "react";
+import React, { useState } from "react";
 
 import "./index.css";
 import Logo from "../../assets/مفرغ للموقع-04.png";
 import burgerImg from "../../assets/burger.svg";
 import { useNavigate } from "react-router-dom";
-import { InlineWidget,useCalendlyEventListener } from "react-calendly";
 
+import whatsApp from '../../assets/whatsapp-svgrepo-com.svg'
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
   
@@ -16,20 +16,16 @@ const NavBar = () => {
   const toggleMenu = () => {
   setShowMenu(!showMenu);
   }
-  const form = useRef();
-  useCalendlyEventListener({
-    onProfilePageViewed: () => console.log("onProfilePageViewed"),
-    onDateAndTimeSelected: () => console.log("onDateAndTimeSelected"),
-    onEventTypeViewed: () => console.log("onEventTypeViewed"),
-    onEventScheduled: (e) => {
-      setToggle(false)
-    },
-  });
-  console.log(toggle)
+
   return (
     <nav className="nav_container">
       <div className="logo_container">
+        <button type="button" onClick={()=>{
+           navigate("/")
+        }}>
+
         <img src={Logo} alt="شعار موقع امجد غنيمة" />
+        </button>
        
       </div>
       <div className="serv_list">
@@ -39,10 +35,21 @@ const NavBar = () => {
         
       </div>
       <div className="hire_me_container">
+      <img src={whatsApp} alt="ايقونة واتساب" />
       <button  onClick={()=>{
         console.log("fff")
         setToggle(true)
-      }}  type="button" >تواصل معي</button>        </div>
+      }}  type="button" >
+          <a href="http://wa.me/+970567201050" target="_blank"
+        >
+
+أطلب الخدمة        </a>
+</button>
+
+      </div>
+
+      
+      
       <div className="burger_menu">
     <div className="burger_img" onClick={toggleMenu}>
       <img src={burgerImg} alt="burger menu" />
@@ -57,27 +64,6 @@ const NavBar = () => {
       }}  type="button">تواصل معي</button>
       </div>
       </div>
-      {
-        toggle && <div style={{
-          position: "absolute"
-          , top:0,
-          left: 0,
-          width:'100vw',
-          height: "100vh",
-          backgroundColor: "rgba(0,0,0,0.5)", zIndex:99999
-          ,display: "flex",
-          justifyContent: "center", 
-          alignItems: "center"
-        }}>
-          <div style={{
-          width: "100%",
-          }}>
-            
-      <InlineWidget url="https://calendly.com/mo7amedehab" />
-          </div>
-
-        </div>
-      }
     </nav>
   );
 };
